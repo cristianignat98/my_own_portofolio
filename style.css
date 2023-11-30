@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+section {
+  margin-bottom: 30rem;
+}
+
 /********************************************************************/
 /********************* MAIN-HERO **************************/
 /********************************************************************/
@@ -52,7 +56,7 @@ header {
   font-size: 1.8rem;
   font-weight: 500;
   /* font-family: Georgia, serif; */
-  color: #333;
+  color: #cc3737;
   transition: all 0.3s;
 }
 
@@ -84,7 +88,7 @@ header {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #cc3737;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -175,92 +179,81 @@ header {
 }
 
 /* /////////////////////////// SECTION ABOUT ME ///////////////*/
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .about-me {
   padding: 10rem 20rem 10rem 20rem;
 }
 
-.about-me-content {
-  position: relative;
-  max-width: 130rem;
-}
+.about-me-container {
+  max-width: 110rem;
 
-.main-part-about-me {
   display: flex;
   gap: 3.2rem;
   align-items: flex-start;
-  justify-content: center;
 }
 
-.main-part-about-me img {
-  width: 13%;
+.img-me {
+  max-width: 16%;
   height: auto;
-  max-width: 20%;
 }
 
 .about-me-description {
   font-size: 2rem;
   text-align: center;
-  line-height: 1.4;
-}
-
-.btn-hire-me {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-
-  position: absolute;
-  bottom: -60%;
-  right: 46%;
+  line-height: 1.6;
 }
 
 /* ////////////////////// SECTION MY-SKILLS ///////////////// */
-.my-skills {
-  padding: 20rem 10rem 20rem 10rem;
+.section-my-skills {
+  text-align: center;
 }
 
-.my-skills-content {
-  margin-top: 6.2rem;
-
+.skills-container {
+  padding: 0rem 10rem 0rem 10rem;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   gap: 8rem;
 }
 
-.my-skills h2 {
+.section-my-skills h2 {
   font-size: 2.8rem;
   color: #cc3737;
   padding-bottom: 1.2rem;
 }
 
-.my-skills-content li {
+.section-my-skills li {
   list-style: none;
   font-size: 2rem;
 }
 
-.my-skills-content ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+.skills-container ul li {
+  line-height: 1.2;
 }
 
 .skills-left,
 .skills-center,
 .skills-right {
-  text-align: center;
-  flex-basis: 100%;
-
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 
 .skills-left,
 .skills-right {
   gap: 3rem;
+  flex: 1;
 }
 
 .skills-center {
   gap: 2.4rem;
+  flex: 1;
 }
 
 /* .icons[name="logo-javascript"] {
@@ -269,46 +262,49 @@ header {
 } */
 
 /* ////////////////////// SECTION MY-PROJECTS///////////////// */
-
-.my-projects {
-  padding: 20rem 10rem 20rem 10rem;
+.section-my-projects {
+  text-align: center;
 }
 
-.projects-content {
+.articles {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 3rem;
+  justify-content: center;
+  gap: 10%;
+  height: 400px;
 }
 
-.project1,
-.project2,
-.project3 {
-  flex-basis: auto;
-  width: 300px;
-  height: 300px;
+.article-1 {
+  width: 400px;
 }
 
-.project1 {
-  background-image: url("img/omnifood.png");
-  background-size: cover;
+.article-img {
+  height: 100%;
 }
 
-.project2 {
-  background-image: url("img/aplicatie.jpg.jpg");
-  background-size: cover;
+.article-img-2 {
+  width: 400px;
 }
 
-.project3 {
-  background-image: url("img/app-layout.jpg");
-  background-size: cover;
+.article-img-1 {
+  width: 400px;
+}
+
+.article-paragraph {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.article-paragraph:hover {
+  color: #ff4545;
+  cursor: pointer;
 }
 
 /* /////////////////////////// FOOTER /////////////////////////// */
 
 .footer {
   background: #000;
-  padding: 80px 0px 30px 0px;
+  padding: 200px 0px 30px 0px;
   font-family: "Play", sans-serif;
   text-align: center;
 }

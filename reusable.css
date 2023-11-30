@@ -83,25 +83,24 @@ body {
 }
 
 .subheading {
-  display: inline-block;
+  /* display: inline-block; */
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
 
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
   padding-bottom: 2rem;
   letter-spacing: 2px;
   border-bottom: 1px solid #ff4545;
 }
 
-.subheading-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .icons {
   height: 3rem;
   width: 3rem;
+}
+
+.intro {
+  display: inline-block;
 }
